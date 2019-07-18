@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class ReturningMethods{
+    public static int summer(int x) {
+        int re = 0;
+        if (x==0) {
+        }
+        else if ( x < 0) {
+            for (int y = x; y < 0; ++y) {
+                re += y; 
+            }
+        }
+        else {
+            for (int y = x; y > 0; --y) {
+                re += y;
+            }
+        }
+        return re;
+    }
+
+    public static String introduction(String name, String activity, int siblings, String emotion) {
+        return "Hello! My name is " + name + "! I have " + siblings + " siblings, and I love "
+        + activity + ". Today I am feeling " + emotion + ". Go Maydm!";
+    }
+
+    public static void main( String[] args ) {
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Enter any whole number:");
+        int a = scnr.nextInt();
+        System.out.println("The sum of all lesser integers is " + summer(a));
+        System.out.println();
+        System.out.println("Enter your name:");
+        String name = scnr.next();
+        System.out.println("How many siblings do you have?");
+        int siblings = scnr.nextInt();
+        System.out.println("What is your favorite activity (ending with \"ing\")?");
+        String activity = scnr.next();
+        System.out.println("How are you feeling today?");
+        String emotion = scnr.next();
+        System.out.println(introduction(name, activity, siblings, emotion));
+    }
+}
