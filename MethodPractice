@@ -1,0 +1,22 @@
+public class MethodPractice {
+    public static void main(String[] args) {
+        
+        int example = exampleMethod(5, "example"); // look down below for how we
+                                                   // need to set up this method!
+        
+        String jack = diego(3, 4, 5);
+
+        int cara = anthony("Good morning");
+
+        double brithany = rommel("Good Morning", 5.9, 7);
+
+        haley(7, 4, "Teacher", "rock and roll", 4.2);
+    }
+
+    public static int /*we need to make it return an int*/ exampleMethod(int a, String b) { // be named the same thing,
+                                                                                            // and 'take in' an int and String
+        
+        return 5; // finally, because it needs to 'return' an int, we can pick any int we want! I picked 5 here
+    }
+
+}
